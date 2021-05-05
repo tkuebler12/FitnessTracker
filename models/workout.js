@@ -6,6 +6,14 @@ const workoutSchema = new Schema({
         type: String,
         trim: true,
         required: "Enter the type of workout you want"
+    },
+    value: {
+        type: Number,
+        required: "Enter how many reps"
+    },
+    date: {
+        type: Date,
+        default: Date.now
     }
 });
 
